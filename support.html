@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - StepFirst</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 30px 0 15px;
+            color: #333;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Support</h1>
+        <p>We're here to help</p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I set my daily step goal?</h3>
+                <p>When you first open the app, you'll go through a quick setup where you can choose your daily step target. You can also change this later in the Profile/Settings tab.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why does the app need HealthKit access?</h3>
+                <p>StepFirst reads your step count from Apple Health to track your daily walking progress. We only read step data - we don't write or modify any of your health information.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why does the app need Screen Time access?</h3>
+                <p>StepFirst uses Apple's Screen Time API (Family Controls) to block and unblock apps based on your step progress. This is the same technology Apple uses for parental controls.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>My steps aren't updating. What should I do?</h3>
+                <p>Make sure you've granted HealthKit permissions. Go to iOS Settings → Privacy & Security → Health → StepFirst and ensure "Steps" is enabled. Also check that your iPhone or Apple Watch is tracking steps correctly.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I unlock apps temporarily without walking?</h3>
+                <p>StepFirst is designed to encourage walking before screen time. However, you can always adjust your step goal in settings if you find it too challenging.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>When do blocked apps unlock?</h3>
+                <p>Apps automatically unlock as soon as you reach your daily step goal. The app checks your progress in real-time.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do blocked apps reset every day?</h3>
+                <p>Yes! At midnight, your step count resets and selected apps become blocked again until you complete your new daily goal.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data shared with anyone?</h3>
+                <p>No. All your data stays on your device. We don't have servers that collect your information. Your health and app usage data is completely private.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete my data?</h3>
+                <p>Simply uninstall the app to remove all data. You can also revoke permissions in iOS Settings for HealthKit and Screen Time.</p>
+            </div>
+
+            <div class="contact-box">
+                <h2>Still Need Help?</h2>
+                <p>Contact us and we'll get back to you as soon as possible.</p>
+                <p><a href="mailto:jobinmacwan@gmail.com">jobinmacwan@gmail.com</a></p>
+            </div>
+
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 StepFirst. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
