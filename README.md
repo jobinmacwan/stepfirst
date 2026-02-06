@@ -24,7 +24,7 @@ Your health data stays on your device. StepFirst uses Apple HealthKit to read st
 
 ## Contact
 
-- **Email**: jobinmacwan@gmail.com
+- **Email**: macwanjobin1525@gmail.com
 - **Website**: [https://jobinmacwan.github.io/stepfirst](https://jobinmacwan.github.io/stepfirst)
 
 ## Links
