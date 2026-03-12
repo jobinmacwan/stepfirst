@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Support - WalkFirst</title>
+<meta property="og:title" content="Support - WalkFirst">
+<meta property="og:description" content="Get help with WalkFirst. Find answers to common questions or contact support.">
+<meta property="og:image" content="https://jobinmacwan.github.io/walkfirst-site/images/app-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -35,6 +41,18 @@
     font-weight: 700;
     color: #FF8C00;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  nav .brand img {
+    width: 32px;
+    height: 32px;
+    border-radius: 22%;
+  }
+  nav .nav-links {
+    display: flex;
+    align-items: center;
   }
   nav .nav-links a {
     font-size: 14px;
@@ -44,6 +62,53 @@
     font-weight: 500;
   }
   nav .nav-links a:hover { color: #FF8C00; }
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 768px) {
+    .hamburger { display: flex; }
+    nav .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      flex-direction: column;
+      padding: 16px 24px 24px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    nav .nav-links.open { display: flex; }
+    nav .nav-links a {
+      margin-left: 0;
+      padding: 12px 0;
+      font-size: 17px;
+      border-bottom: 1px solid #f0f0f0;
+      width: 100%;
+      text-align: center;
+    }
+    nav .nav-links a:last-child { border-bottom: none; }
+  }
 
   /* Hero */
   .hero {
@@ -159,16 +224,28 @@
   }
   .faq-category:first-of-type { margin-top: 0; }
 
-  /* Footer note */
-  .footer-note {
+  /* Footer */
+  footer {
+    background: #1a1a1a;
+    color: #aaa;
+    padding: 40px 24px;
     text-align: center;
-    color: #999;
     font-size: 14px;
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid #eee;
   }
-  .footer-note a { color: #FF8C00; text-decoration: none; }
+  footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { color: #FF8C00; }
+  footer .footer-brand {
+    color: #FF8C00;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  footer .footer-links { margin-bottom: 16px; }
 
   @media (max-width: 600px) {
     .hero h1 { font-size: 28px; }
@@ -183,10 +260,14 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="brand">WalkFirst</a>
+    <a href="index.html" class="brand"><img src="images/app-icon.png" alt="WalkFirst Icon">WalkFirst</a>
+    <button class="hamburger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
     </div>
   </div>
@@ -343,12 +424,18 @@
     </div>
   </div>
 
-  <div class="footer-note">
-    <p>Still need help? Email us at <a href="mailto:jobinmacwan@gmail.com">jobinmacwan@gmail.com</a></p>
-    <p style="margin-top:8px;"><a href="privacy-policy.html">Privacy Policy</a></p>
-  </div>
-
 </div>
+
+<footer>
+  <span class="footer-brand">WalkFirst</span>
+  <div class="footer-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:jobinmacwan@gmail.com">Contact</a>
+  </div>
+  <p>&copy; 2026 Jobin Macwan. All rights reserved.</p>
+</footer>
 
 <script>
 document.querySelectorAll('.faq-item').forEach(function(item) {

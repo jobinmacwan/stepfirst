@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service - WalkFirst</title>
+<meta property="og:title" content="Terms of Service - WalkFirst">
+<meta property="og:description" content="WalkFirst Terms of Service. Read our terms for using the app and subscription services.">
+<meta property="og:image" content="https://jobinmacwan.github.io/walkfirst-site/images/app-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fafafa;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Nav */
+  nav {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav .nav-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF8C00;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  nav .brand img {
+    width: 32px;
+    height: 32px;
+    border-radius: 22%;
+  }
+  nav .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  nav .nav-links a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 500;
+  }
+  nav .nav-links a:hover { color: #FF8C00; }
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 768px) {
+    .hamburger { display: flex; }
+    nav .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      flex-direction: column;
+      padding: 16px 24px 24px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    nav .nav-links.open { display: flex; }
+    nav .nav-links a {
+      margin-left: 0;
+      padding: 12px 0;
+      font-size: 17px;
+      border-bottom: 1px solid #f0f0f0;
+      width: 100%;
+      text-align: center;
+    }
+    nav .nav-links a:last-child { border-bottom: none; }
+  }
+
+  /* Content */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+  }
+  .last-updated {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FF8C00;
+    display: inline-block;
+  }
+  h2::after {
+    content: '';
+    display: block;
+  }
+  .section { margin-bottom: 32px; }
+  .section h2 { display: block; }
+  p { margin-bottom: 16px; color: #333; font-size: 16px; }
+  ul {
+    margin: 12px 0 16px 24px;
+    color: #333;
+  }
+  li { margin-bottom: 8px; font-size: 16px; }
+  strong { color: #1a1a1a; }
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(255,140,0,0.06), rgba(255,89,51,0.06));
+    border-left: 4px solid #FF8C00;
+    border-radius: 0 12px 12px 0;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight-box p { margin-bottom: 0; }
+  a { color: #FF8C00; }
+  a:hover { color: #FF5933; }
+
+  /* Footer */
+  footer {
+    background: #1a1a1a;
+    color: #aaa;
+    padding: 40px 24px;
+    text-align: center;
+    font-size: 14px;
+  }
+  footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { color: #FF8C00; }
+  footer .footer-brand {
+    color: #FF8C00;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  footer .footer-links { margin-bottom: 16px; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    .container { padding: 32px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><img src="images/app-icon.png" alt="WalkFirst Icon">WalkFirst</a>
+    <button class="hamburger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<h1>Terms of Service</h1>
+<p class="last-updated">Last updated: March 12, 2026</p>
+
+<div class="highlight-box">
+  <p><strong>Summary:</strong> WalkFirst is a screen time management app. By using it, you agree to these terms. The app is provided "as is" and subscriptions are billed through Apple.</p>
+</div>
+
+<div class="section">
+  <h2>1. Acceptance of Terms</h2>
+  <p>By downloading, installing, or using WalkFirst ("the app"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the app.</p>
+  <p>WalkFirst is developed by Jobin Macwan ("we," "our," or "us").</p>
+</div>
+
+<div class="section">
+  <h2>2. Description of Service</h2>
+  <p>WalkFirst is a screen time management app that blocks selected apps on your device until you reach a daily step goal. The app uses Apple HealthKit to read step data and Apple's Screen Time (FamilyControls) framework to manage app access.</p>
+  <p>WalkFirst is designed as a personal productivity tool and is not a medical device. It should not be used as a substitute for professional health advice.</p>
+</div>
+
+<div class="section">
+  <h2>3. Eligibility</h2>
+  <p>You must be at least 13 years old to use WalkFirst. If you are under 18, you must have the consent of a parent or legal guardian.</p>
+  <p>You must have a compatible iOS device with access to Apple Health and Screen Time features.</p>
+</div>
+
+<div class="section">
+  <h2>4. Free and Pro Plans</h2>
+  <p>WalkFirst offers two tiers:</p>
+  <ul>
+    <li><strong>Free</strong> — Core features including step tracking, basic app blocking, and daily progress</li>
+    <li><strong>WalkFirst Pro</strong> — Unlimited app blocking, full progress history (weekly, monthly, yearly), advanced achievements, and priority support</li>
+  </ul>
+  <p>We reserve the right to change which features are included in each tier at any time. We will notify users of significant changes through the app or this page.</p>
+</div>
+
+<div class="section">
+  <h2>5. Subscriptions and Payments</h2>
+  <p>WalkFirst Pro is available as an auto-renewing subscription. By subscribing, you agree to the following:</p>
+  <ul>
+    <li>Payment is charged to your Apple ID account at confirmation of purchase</li>
+    <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period</li>
+    <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+    <li>You can manage and cancel subscriptions in your Apple ID Account Settings</li>
+    <li>Any unused portion of a free trial period will be forfeited when you purchase a subscription</li>
+  </ul>
+  <p>All payments are processed by Apple. We do not have access to your payment information. Refund requests must be directed to Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+</div>
+
+<div class="section">
+  <h2>6. Acceptable Use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Reverse engineer, decompile, or disassemble the app</li>
+    <li>Attempt to bypass or circumvent the app blocking functionality</li>
+    <li>Use the app for any unlawful purpose</li>
+    <li>Redistribute, sublicense, or resell the app</li>
+    <li>Interfere with or disrupt the integrity or performance of the app</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>7. Health Data Disclaimer</h2>
+  <p>WalkFirst reads step count data from Apple HealthKit for the purpose of tracking your progress toward daily goals. The step data displayed in the app is sourced from Apple Health and may vary based on your device, settings, and activity.</p>
+  <p>WalkFirst is <strong>not</strong> a medical or health advisory tool. Step counts and screen time statistics are provided for informational and motivational purposes only. Always consult a healthcare professional for health-related decisions.</p>
+</div>
+
+<div class="section">
+  <h2>8. App Blocking Disclaimer</h2>
+  <p>WalkFirst uses Apple's FamilyControls and Screen Time frameworks to block apps. While we make every effort to ensure reliable functionality:</p>
+  <ul>
+    <li>App blocking depends on Apple's APIs and may be affected by iOS updates or system changes</li>
+    <li>We cannot guarantee that blocked apps will remain blocked in every scenario</li>
+    <li>The app is a personal accountability tool and should not be relied upon as the sole means of restricting app access</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>9. Intellectual Property</h2>
+  <p>All content, features, design, and functionality of WalkFirst are owned by Jobin Macwan and are protected by applicable intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the app without prior written consent.</p>
+</div>
+
+<div class="section">
+  <h2>10. Limitation of Liability</h2>
+  <p>WalkFirst is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied. To the fullest extent permitted by law:</p>
+  <ul>
+    <li>We are not liable for any indirect, incidental, special, or consequential damages</li>
+    <li>We are not responsible for any loss of data, missed step counts, or app blocking failures</li>
+    <li>Our total liability shall not exceed the amount you paid for the app in the 12 months preceding the claim</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>11. Termination</h2>
+  <p>You may stop using WalkFirst at any time by deleting the app. We reserve the right to suspend or terminate access to the app if you violate these Terms.</p>
+  <p>Upon termination, your locally stored data will be removed when you delete the app. Active subscriptions must be cancelled separately through Apple.</p>
+</div>
+
+<div class="section">
+  <h2>12. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. Changes will be posted on this page with an updated "Last updated" date. Continued use of the app after changes constitutes acceptance of the updated Terms.</p>
+</div>
+
+<div class="section">
+  <h2>13. Governing Law</h2>
+  <p>These Terms are governed by and construed in accordance with applicable laws. Any disputes arising from or related to these Terms or the use of WalkFirst shall be resolved through appropriate legal channels.</p>
+</div>
+
+<div class="section">
+  <h2>14. Contact Us</h2>
+  <p>If you have questions about these Terms, please contact us:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:jobinmacwan@gmail.com">jobinmacwan@gmail.com</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/jobinmacwan" target="_blank" rel="noopener">github.com/jobinmacwan</a></li>
+  </ul>
+</div>
+
+</div>
+
+<footer>
+  <span class="footer-brand">WalkFirst</span>
+  <div class="footer-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:jobinmacwan@gmail.com">Contact</a>
+  </div>
+  <p>&copy; 2026 Jobin Macwan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
